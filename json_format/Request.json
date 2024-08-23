@@ -1,0 +1,128 @@
+SEND text MESSAGE
+{
+    "messaging_product": "whatsapp",
+    "recipient_type": "individual",
+    "to": "{{Recipient-Phone-Number}}",
+    "type": "text",
+    "text": {
+        "preview_url": false,
+        "body": "text-message-content"
+    }
+}
+
+
+MARK AS READ
+{
+    "messaging_product": "whatsapp",
+    "status": "read",
+    "message_id": "wamid.HBgMMjU4ODYwODQyMDI0FQIAEhggQTEyOTQzMTZBQTkzRkU0RjlGNEZBMTBFMTUzMTVDNEQA"
+}
+
+
+REPLY BUTTON
+{
+    "messaging_product": "whatsapp",
+    "recipient_type": "individual",
+    "to": "{{Recipient-Phone-Number}}",
+    "type": "interactive",
+    "interactive": {
+        "type": "button",
+        "body": {
+            "text": "<BUTTON_TEXT>"
+        },
+        "action": {
+            "buttons": [
+                {
+                    "type": "reply",
+                    "reply": {
+                        "id": "<UNIQUE_BUTTON_ID_1>",
+                        "title": "<BUTTON_TITLE_1>"
+                    }
+                },
+                {
+                    "type": "reply",
+                    "reply": {
+                        "id": "<UNIQUE_BUTTON_ID_2>",
+                        "title": "<BUTTON_TITLE_2>"
+                    }
+                }
+            ]
+        }
+    }
+}
+
+
+REPLY TEXT MESSAGE
+{
+    "messaging_product": "whatsapp",
+    "recipient_type": "individual",
+    "to": "{{Recipient-Phone-Number}}",
+    "context": {
+        "message_id": "wamid.HBgMMjU4ODYwODQyMDI0FQIAEhggOUY1MDA5MjM1Q0Y2NEM5QTFGN0U4QjgwRUM0NDM2M0UA"
+    },
+    "type": "text",
+    "text": {
+        "preview_url": false,
+        "body": "<TEXT_MSG_CONTENT>"
+    }
+}
+
+
+SEND REPLY  TO LIST MESSAGE
+{
+    "messaging_product": "whatsapp",
+    "recipient_type": "individual",
+    "to": "{{Recipient-Phone-Number}}",
+    "context": {
+        "message_id": "<MSGID_OF_PREV_MSG>"
+    },
+    "type": "interactive",
+    "interactive": {
+        "type": "list",
+        "header": {
+            "type": "text",
+            "text": "<HEADER_TEXT>"
+        },
+        "body": {
+            "text": "<BODY_TEXT>"
+        },
+        "footer": {
+            "text": "<FOOTER_TEXT>"
+        },
+        "action": {
+            "button": "<BUTTON_TEXT>",
+            "sections": [
+                {
+                    "title": "<LIST_SECTION_1_TITLE>",
+                    "rows": [
+                        {
+                            "id": "<LIST_SECTION_1_ROW_1_ID>",
+                            "title": "<SECTION_1_ROW_1_TITLE>",
+                            "description": "<SECTION_1_ROW_1_DESC>"
+                        },
+                        {
+                            "id": "<LIST_SECTION_1_ROW_2_ID>",
+                            "title": "<SECTION_1_ROW_2_TITLE>",
+                            "description": "<SECTION_1_ROW_2_DESC>"
+                        }
+                    ]
+                },
+                {
+                    "title": "<LIST_SECTION_2_TITLE>",
+                    "rows": [
+                        {
+                            "id": "<LIST_SECTION_2_ROW_1_ID>",
+                            "title": "<SECTION_2_ROW_1_TITLE>",
+                            "description": "<SECTION_2_ROW_1_DESC>"
+                        },
+                        {
+                            "id": "<LIST_SECTION_2_ROW_2_ID>",
+                            "title": "<SECTION_2_ROW_2_TITLE>",
+                            "description": "<SECTION_2_ROW_2_DESC>"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

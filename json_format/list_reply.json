@@ -1,0 +1,304 @@
+{
+    "object": "whatsapp_business_account",
+        "entry": [
+            {
+                "id": "420322614490057",
+                "changes": [
+                    {
+                        "value": {
+                            "messaging_product": "whatsapp",
+                            "metadata": {
+                                "display_phone_number": "15556221418",
+                                "phone_number_id": "336517706221288"
+                            },
+                            "contacts": [
+                                {
+                                    "profile": {
+                                        "name": "blazehlv 1315"
+                                    },
+                                    "wa_id": "258860842024"
+                                }
+                            ],
+                            "messages": [
+                                {
+                                    "context": {
+                                        "from": "15556221418",
+                                        "id": "wamid.HBgMMjU4ODYwODQyMDI0FQIAERgSMjk0MkIwOUJGMjhDQTE1ODcyAA=="
+                                    },
+                                    "from": "258860842024",
+                                    "id": "wamid.HBgMMjU4ODYwODQyMDI0FQIAEhggOEFBODQ4MzZDMEI1N0Q1RTY2RjFDMEEyMjU1NzIwMDkA",
+                                    "timestamp": "1724193219",
+                                    "type": "interactive",
+                                    "interactive": {
+                                        "type": "list_reply",
+                                        "list_reply": {
+                                            "id": "<LIST_SECTION_2_ROW_1_ID>",
+                                            "title": "Mês de Junho"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "field": "messages"
+                    }
+                ]
+            }
+        ]
+}
+////////////////////
+{
+     "object": "whatsapp_business_account",
+     "entry": [
+          {
+               "id": "420322614490057",
+               "changes": [
+                    {
+                         "value": {
+                              "messaging_product": "whatsapp",
+                              "metadata": {
+                                   "display_phone_number": "15556221418",
+                                   "phone_number_id": "336517706221288"
+                              },
+                              "statuses": [
+                                   {
+                                        "id": "wamid.HBgMMjU4ODYwODQyMDI0FQIAERgSRUMwREZBODI5QjY1Mzc2OEI5AA==",
+                                        "status": "delivered",
+                                        "timestamp": "1724194083",
+                                        "recipient_id": "258860842024",
+                                        "conversation": {
+                                             "id": "2cd09cc8fd9c187acf1c32f6886de59f",
+                                             "origin": {
+                                                  "type": "service"
+                                             }
+                                        },
+                                        "pricing": {
+                                             "billable": true,
+                                             "pricing_model": "CBP",
+                                             "category": "service"
+                                        }
+                                   }
+                              ]
+                         },
+                         "field": "messages"
+                    }
+               ]
+          }
+     ]
+}
+////////////////////////
+{
+     "object": "whatsapp_business_account",
+     "entry": [
+          {
+               "id": "420322614490057",
+               "changes": [
+                    {
+                         "value": {
+                              "messaging_product": "whatsapp",
+                              "metadata": {
+                                   "display_phone_number": "15556221418",
+                                   "phone_number_id": "336517706221288"
+                              },
+                              "statuses": [
+                                   {
+                                        "id": "wamid.HBgMMjU4ODYwODQyMDI0FQIAERgSRUMwREZBODI5QjY1Mzc2OEI5AA==",
+                                        "status": "sent",
+                                        "timestamp": "1724194071",
+                                        "recipient_id": "258860842024",
+                                        "conversation": {
+                                             "id": "2cd09cc8fd9c187acf1c32f6886de59f",
+                                             "expiration_timestamp": "1724280480",
+                                             "origin": {
+                                                  "type": "service"
+                                             }
+                                        },
+                                        "pricing": {
+                                             "billable": true,
+                                             "pricing_model": "CBP",
+                                             "category": "service"
+                                        }
+                                   }
+                              ]
+                         },
+                         "field": "messages"
+                    }
+               ]
+          }
+     ]
+}
+/////////////////
+{
+     "object": "whatsapp_business_account",
+     "entry": [
+          {
+               "id": "420322614490057",
+               "changes": [
+                    {
+                         "value": {
+                              "messaging_product": "whatsapp",
+                              "metadata": {
+                                   "display_phone_number": "15556221418",
+                                   "phone_number_id": "336517706221288"
+                              },
+                              "contacts": [
+                                   {
+                                        "profile": {
+                                             "name": "blazehlv 1315"
+                                        },
+                                        "wa_id": "258860842024"
+                                   }
+                              ],
+                              "messages": [
+                                   {
+                                        "context": {
+                                             "from": "15556221418",
+                                             "id": "wamid.HBgMMjU4ODYwODQyMDI0FQIAERgSRUMwREZBODI5QjY1Mzc2OEI5AA=="
+                                        },
+                                        "from": "258860842024",
+                                        "id": "wamid.HBgMMjU4ODYwODQyMDI0FQIAEhggOUY1MDA5MjM1Q0Y2NEM5QTFGN0U4QjgwRUM0NDM2M0UA",
+                                        "timestamp": "1724194209",
+                                        "text": {
+                                             "body": "Obaaaa"
+                                        },
+                                        "type": "text"
+                                   }
+                              ]
+                         },
+                         "field": "messages"
+                    }
+               ]
+          }
+     ]
+}
+////////////////////////////////////
+{
+     "object": "whatsapp_business_account",
+     "entry": [
+          {
+               "id": "420322614490057",
+               "changes": [
+                    {
+                         "value": {
+                              "messaging_product": "whatsapp",
+                              "metadata": {
+                                   "display_phone_number": "15556221418",
+                                   "phone_number_id": "336517706221288"
+                              },
+                              "contacts": [
+                                   {
+                                        "profile": {
+                                             "name": "blazehlv 1315"
+                                        },
+                                        "wa_id": "258860842024"
+                                   }
+                              ],
+                              "messages": [
+                                   {
+                                        "from": "258860842024",
+                                        "id": "wamid.HBgMMjU4ODYwODQyMDI0FQIAEhggODBFMjc2N0FFNjRERTk3ODJFNUREMTVGMUNCNzZBQjEA",
+                                        "timestamp": "1724194327",
+                                        "type": "reaction",
+                                        "reaction": {
+                                             "message_id": "wamid.HBgMMjU4ODYwODQyMDI0FQIAERgSMkY3MDg0MEI3OTE4RENBOEMzAA==",
+                                             "emoji": "�😂"
+                                        }
+                                   }
+                              ]
+                         },
+                         "field": "messages"
+                    }
+               ]
+          }
+     ]
+}
+////////////////////////////////////
+{
+     "object": "whatsapp_business_account",
+     "entry": [
+          {
+               "id": "420322614490057",
+               "changes": [
+                    {
+                         "value": {
+                              "messaging_product": "whatsapp",
+                              "metadata": {
+                                   "display_phone_number": "15556221418",
+                                   "phone_number_id": "336517706221288"
+                              },
+                              "contacts": [
+                                   {
+                                        "profile": {
+                                             "name": "blazehlv 1315"
+                                        },
+                                        "wa_id": "258860842024"
+                                   }
+                              ],
+                              "messages": [
+                                   {
+                                        "from": "258860842024",
+                                        "id": "wamid.HBgMMjU4ODYwODQyMDI0FQIAEhggQjZDNjA0OEIwRDA0NkYwOTRFN0UzMTc5NjdGRDdENkYA",
+                                        "timestamp": "1724194365",
+                                        "type": "audio",
+                                        "audio": {
+                                             "mime_type": "audio/ogg; codecs=opus",
+                                             "sha256": "6zXX0b/JrK1NWMdhul0UWCwauslclRuZkqSpgoddEVk=",
+                                             "id": "524035886729978",
+                                             "voice": true
+                                        }
+                                   }
+                              ]
+                         },
+                         "field": "messages"
+                    }
+               ]
+          }
+     ]
+}
+///////////////////////////////////////////////
+{
+     "object": "whatsapp_business_account",
+     "entry": [
+          {
+               "id": "420322614490057",
+               "changes": [
+                    {
+                         "value": {
+                              "messaging_product": "whatsapp",
+                              "metadata": {
+                                   "display_phone_number": "15556221418",
+                                   "phone_number_id": "336517706221288"
+                              },
+                              "contacts": [
+                                   {
+                                        "profile": {
+                                             "name": "blazehlv 1315"
+                                        },
+                                        "wa_id": "258860842024"
+                                   }
+                              ],
+                              "messages": [
+                                   {
+                                        "context": {
+                                             "from": "15556221418",
+                                             "id": "wamid.HBgMMjU4ODYwODQyMDI0FQIAERgSRERFREJGN0FBNDFFQ0Q3MUJGAA=="
+                                        },
+                                        "from": "258860842024",
+                                        "id": "wamid.HBgMMjU4ODYwODQyMDI0FQIAEhggQTEyOTQzMTZBQTkzRkU0RjlGNEZBMTBFMTUzMTVDNEQA",
+                                        "timestamp": "1724194488",
+                                        "type": "interactive",
+                                        "interactive": {
+                                             "type": "button_reply",
+                                             "button_reply": {
+                                                  "id": "<UNIQUE_BUTTON_ID_1>",
+                                                  "title": "<BUTTON_TITLE_1>"
+                                             }
+                                        }
+                                   }
+                              ]
+                         },
+                         "field": "messages"
+                    }
+               ]
+          }
+     ]
+}
