@@ -1,5 +1,5 @@
 //ReceivedUserInitiatedStatus
-import { PricingModel, StatusConversationType } from "../../enums";
+import { PricingModel, StatusConversationType } from "../../enums/customTypes";
 import { WebhookNotificationBase } from "./WebhookNotificationBase";
 
 type Origin = {

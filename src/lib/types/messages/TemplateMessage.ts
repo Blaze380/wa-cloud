@@ -1,22 +1,25 @@
-import { PayloadMessagesBase, ReplyPayloadMessagesBase } from "./PayloadMessagesBase";
-import { ComponentSubType, ComponentType, ParameterType, PolicyType } from "./enums";
+import { PayloadMessagesBase } from "./PayloadMessagesBase";
+import { ComponentSubType, ComponentType, ParameterType, PolicyType } from "../../enums";
 
 type Language = {
     code: string;
     policy?: PolicyType;
 }
-
-type Parameter = {
+type Image = {
+    link: string;
+}
+export type Parameter = {
     type: ParameterType;
     text?: string;
     currency?: Currency;
     date_time?: DateTime;
     action?: Action;
+    image?: Image;
 }
 type Action = {
     thumbnail_product_retailer_id: string;
 }
-type DateTime = {
+export type DateTime = {
     fallback_value: string;
     day_of_week: number;
     year: number;
@@ -26,7 +29,7 @@ type DateTime = {
     minute: number;
     calendar: string;
 }
-type Currency = {
+export type Currency = {
     fallback_value: string;
     code: string;
     amount_1000: number;

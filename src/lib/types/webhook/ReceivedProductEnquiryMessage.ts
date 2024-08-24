@@ -1,12 +1,12 @@
 import { WebhookNotificationBase } from "./WebhookNotificationBase";
 
 
-export interface Referred_product {
+export type Referred_product = {
     catalog_id: string;
     product_retailer_id: string;
 }
 
-export interface Context {
+export type Context = {
     from: string;
     id: string;
     referred_product: Referred_product;

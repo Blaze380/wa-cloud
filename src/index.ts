@@ -1,1 +1,6 @@
-export { } from "wa-cloud-api";
+import { WaCloudMessages, WaCloudCredentials } from "./lib/core";
+/**
+ * @ignore
+ *
+ */
+export { WaCloudCredentials, WaCloudMessages };

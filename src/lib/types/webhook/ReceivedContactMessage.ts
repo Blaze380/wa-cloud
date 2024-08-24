@@ -1,4 +1,4 @@
-import { AddressType } from "../../enums";
+import { AddressType } from "../../enums/customTypes";
 import { WebhookNotificationBase } from "./WebhookNotificationBase";
 
 type Address = {

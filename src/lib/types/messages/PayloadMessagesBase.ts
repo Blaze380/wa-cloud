@@ -1,4 +1,4 @@
-import { MessageType, MessagingProduct, RecipientType } from "../../enums"
+import { MessageType, MessagingProduct, RecipientType } from "../../enums/customTypes"
 export type PayloadMessagesBase = {
     messaging_product: MessagingProduct;
     recipient_type: RecipientType;

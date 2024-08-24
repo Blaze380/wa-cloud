@@ -1,9 +1,6 @@
 import { PayloadMessagesBase, ReplyPayloadMessagesBase } from './PayloadMessagesBase'
-import { InteractiveType } from './enums';
+import { InteractiveType } from '../../enums';
 
-type Context = {
-    message_id: string;
-}
 
 type Header = {
     type: string;
@@ -18,15 +15,15 @@ type Footer = {
     text: string;
 }
 
-type Row = {
+type SectionRow = {
     id: string;
     title: string;
     description?: string;
 }
 
-type Section = {
+export type Section = {
     title: string;
-    rows: Row[];
+    rows: SectionRow[];
 }
 
 type Action = {

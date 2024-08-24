@@ -1,4 +1,4 @@
-import { FieldType, MessagingProduct, ObjectType } from "../../enums";
+import { FieldType, MessagingProduct, ObjectType } from "../../enums/customTypes";
 
 
 type Metadata = {

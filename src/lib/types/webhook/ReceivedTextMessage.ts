@@ -1,4 +1,4 @@
-import { MessageType } from "../../enums";
+import { MessageType } from "../../enums/customTypes";
 import { WebhookNotificationBase } from "./WebhookNotificationBase";
 
 

@@ -1,4 +1,4 @@
-import { MediaType, MessageSourceType } from "../../enums";
+import { MediaType, MessageSourceType } from "../../enums/customTypes";
 import { WebhookNotificationBase } from "./WebhookNotificationBase";
 
 type Referral = {
@@ -34,6 +34,6 @@ type Entry = {
     changes: Change[];
 }
 
-export type ReceivedImageMessage = WebhookNotificationBase & {
+export type ReceivedTriggeredMessageByAds = WebhookNotificationBase & {
     entry: Entry[];
 };

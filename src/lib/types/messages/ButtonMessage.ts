@@ -1,16 +1,16 @@
 import { PayloadMessagesBase, ReplyPayloadMessagesBase } from "./PayloadMessagesBase";
-import { InteractiveButtonType, InteractiveType } from "./enums";
+import { InteractiveButtonType, InteractiveType } from "../../enums/customTypes";
 
 type Body = {
     text: string;
 }
 
-type Reply = {
+export type Reply = {
     id: string;
     title: string;
 }
 
-type Button = {
+export type Button = {
     type: InteractiveButtonType;
     reply: Reply;
 }
@@ -27,11 +27,16 @@ type Interactive = {
     action: Action;
 }
 
-
+/**
+ * @category Message Type
+ */
 export type ButtonMessage = {
     interactive: Interactive;
 } & PayloadMessagesBase;
 
+/**
+ * @category Reply Message Type
+ */
 export type ReplyButtonMessage = {
     interactive: Interactive;
 } & ReplyPayloadMessagesBase;

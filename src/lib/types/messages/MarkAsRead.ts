@@ -1,4 +1,4 @@
-import { MessageStatus } from "./enums";
+import { MessageStatus } from "../../enums";
 
 export type MarkedAsRead = {
     messaging_product: string

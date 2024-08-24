@@ -1,6 +1,6 @@
 import { PayloadMessagesBase, ReplyPayloadMessagesBase } from "./PayloadMessagesBase"
 
-type Location = {
+export type Location = {
     latitude: string;
     longitude: string;
     name: string;

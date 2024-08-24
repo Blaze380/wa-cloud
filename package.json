@@ -1,24 +1,35 @@
 {
-  "name": "whatsapp_cloud-api-lib",
+  "name": "blaze380/wa-cloud",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "dev":"nodemon",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon",
+    "dev:build": "npx tsc ./src/lib/wa-cloud-api.ts",
+    "docs": "npx typedoc",
+    "build": "",
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "whatsapp",
+    "cloud-api",
+    "whatsapp bot",
+    "oficial whatsapp api"
+  ],
+  "author": "Niuro Orlando",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@types/express": "^4.17.21",
-    "jest": "^29.7.0",
-    "nodemon": "^3.1.4",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
-  },
+  "description": "A simple library to simplify the development using whatsapp cloud API. It provides a ready methods to interact to your business account. ",
   "dependencies": {
     "axios": "^1.7.4",
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typedoc": "^0.26.6",
+    "typescript": "^5.5.4"
   }
 }

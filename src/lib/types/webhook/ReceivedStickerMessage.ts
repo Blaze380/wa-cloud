@@ -1,4 +1,4 @@
-import { MimeType } from "../../enums";
+import { MimeType } from "../../enums/customTypes";
 import { WebhookNotificationBase } from "./WebhookNotificationBase";
 
 type Sticker = {

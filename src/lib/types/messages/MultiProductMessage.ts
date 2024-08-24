@@ -1,5 +1,5 @@
 import { PayloadMessagesBase } from "./PayloadMessagesBase";
-import { InteractiveType } from "./enums";
+import { InteractiveType } from "../../enums";
 
 type Header = {
     type: string;
