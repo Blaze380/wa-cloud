@@ -14,7 +14,7 @@ type Message = {
     type: MessageType;
     text?: Text;
     sticker?: Sticker;
-    contact?: Contact
+    contact?: Contact[];
     image?: Image;
     location?: Location;
     order?: Order;

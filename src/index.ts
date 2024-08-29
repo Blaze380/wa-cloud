@@ -1,6 +1,6 @@
-import { WaCloudMessages, WaCloudCredentials } from "./lib/core";
+import { WaMessages, WaCredentials } from "./lib/core";
 /**
  * @ignore
  *
  */
-export { WaCloudCredentials, WaCloudMessages };
+export { WaCredentials, WaMessages };

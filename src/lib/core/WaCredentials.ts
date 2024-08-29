@@ -1,4 +1,4 @@
-export class WaCloudCredentials {
+export class WaCredentials {
     /**
      * @ignore
      */

@@ -1,6 +1,38 @@
 
 /**
- * Type of Interactive  messages
+ * A const type for interactive messages such Lists,buttons, products, etc.
+ *
+ * @example
+ * In case of List message.
+ * ```typescript
+ * const message: ListMessage = {
+ *       messaging_product: MESSAGE_PRODUCT.whatsapp,
+ *       interactive: {
+ *           type: INTERACTIVE_TYPE.list,
+ *       },
+ *       recipient_type: RECIPIENT_TYPE.individual,
+ *       type: MESSAGE_TYPE.interactive,
+ *   }
+ * ```
+ *
+ * @example
+ * In case of Button message
+ * ```typescript
+ *  const message: ButtonMessage = {
+ *       type: MESSAGE_TYPE.interactive,
+ *       interactive: {
+ *           type: INTERACTIVE_TYPE.button,
+ *           body: {
+ *               text: bodyText,
+ *           },
+ *           action: {
+ *               buttons: buttons
+ *           },
+ *       },
+ *   }
+ * ```
+ * @see {@link WaCloudMessages#sendListMessage} - For List interactive messages
+ * @see {@link WaCloudMessages#sendButtonMessage} - For Button interactive messages
  */
 export const INTERACTIVE_TYPE = {
     button: "button",
@@ -21,7 +53,8 @@ export type InteractiveButtonType = (typeof INTERACTIVE_BUTTON_TYPE)[keyof typeo
 
 
 /**
- * Type of Adress
+ * A const type for contacts such, address type, phone number type, etc.
+ * @see {@link WaCloudMessages#sendContactMessage} - For Contact messages
  */
 export const ADDRESS_TYPE = {
     home: "HOME",
@@ -30,7 +63,16 @@ export const ADDRESS_TYPE = {
 export type AddressType = (typeof ADDRESS_TYPE)[keyof typeof ADDRESS_TYPE];
 
 /**
- * Type of Message status
+ * A const type for message status
+ * @example
+ * To set a message as read
+ * ```typescript
+ *  const message: MarkedAsRead = {
+ *       message_id: messageId,
+ *       status: MESSAGE_STATUS.read,
+ *   }
+ * ```
+ * @see {@link WaCloudMessages#sendMarkAsRead} - For Mark as read a  message
  */
 export const MESSAGE_STATUS = {
     sent: "sent",
@@ -47,6 +89,15 @@ export type MessageStatus = (typeof MESSAGE_STATUS)[keyof typeof MESSAGE_STATUS]
 
 /**
  * Type of message. It can be text or interactive for now
+ * @example
+* ```typescript
+ * const message: TextMessage = {
+*           type: MESSAGE_TYPE.text,
+*           text: {
+*               body: text,
+*           }
+*       }
+* ```
  */
 export const MESSAGE_TYPE = {
     text: "text",
@@ -69,7 +120,12 @@ export type MessageType = (typeof MESSAGE_TYPE)[keyof typeof MESSAGE_TYPE];
 
 
 /**
- * Messaging product
+ * Message Product
+ * @example
+* ```typescript
+ * const message: TextMessage = {
+ *          messaging_product: MESSAGE_PRODUCT.whatsapp,
+* ```
  */
 export const MESSAGE_PRODUCT = {
     whatsapp: "whatsapp"
@@ -84,7 +140,29 @@ export const RECIPIENT_TYPE = {
 } as const;
 export type RecipientType = (typeof RECIPIENT_TYPE)[keyof typeof RECIPIENT_TYPE];
 
-
+/**
+ * Type for indicating a component type, a template message only has two components and both are optional: Header and Body. The two receive an array of parameters.
+ * @example
+ * ```typescript
+ *  const message: TemplateMessage = {
+ *           type: MESSAGE_TYPE.template,
+ *           template: {
+ *               name: templateName,
+ *               components: [
+ *                   {
+ *                       type: COMPONENT_TYPE.body,
+ *                       parameters: [
+ *
+ *                       ],
+ *                   }
+ *
+ *               ]
+ *           },
+ *       }
+ * ```
+ *
+ * @see {@link WaCloudMessages#sendTemplateMessageWithComponents} - For template message with Components
+ */
 export const COMPONENT_TYPE = {
     body: "body",
     header: "header"
@@ -92,6 +170,10 @@ export const COMPONENT_TYPE = {
 export type ComponentType = (typeof COMPONENT_TYPE)[keyof typeof COMPONENT_TYPE];
 
 
+/**
+ * Type for indicating a parameter type is for each component of a template message
+ * @see {@link WaCloudMessages#sendTemplateMessageWithComponents} - For template message with Components
+ */
 export const PARAMETER_TYPE = {
     text: "text",
     currency: "currency",
@@ -122,7 +204,10 @@ const FIELD_TYPE = {
     messages: "messages",
 } as const;
 export type FieldType = (typeof FIELD_TYPE)[keyof typeof FIELD_TYPE];
-"application/"
+
+/**
+ * Type for indicating all media types supported by whatsapp
+ */
 export const MIME_TYPE = {
     audio: {
         aac: "audio/aac",
@@ -155,20 +240,27 @@ export const MIME_TYPE = {
     },
 } as const;
 export type MimeType = (typeof MIME_TYPE)[keyof typeof MIME_TYPE];
-
+/**
+ * Type for indicating which source the user used to start a conversation, it can BE a post or an advertisement
+ */
 export const MESSAGE_SOURCE_TYPE = {
     advertisement: "AD",
     post: "POST",
 } as const;
 export type MessageSourceType = (typeof MESSAGE_SOURCE_TYPE)[keyof typeof MESSAGE_SOURCE_TYPE];
 
-
+/**
+ * Type for indicating which media  the user saw to start a conversation
+ */
 export const MEDIA_TYPE = {
     image: "IMAGE",
     video: "VIDEO",
 } as const;
 export type MediaType = (typeof MEDIA_TYPE)[keyof typeof MEDIA_TYPE];
 
+/**
+ * Type for indicating who started the conversation
+ */
 export const STATUS_CONVERSATION_TYPE = {
     user_initiated: "user_initiated",
     business_initiated: "business_initiated",

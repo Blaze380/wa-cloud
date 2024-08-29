@@ -1,5 +1,5 @@
 import axios, { AxiosError, AxiosInstance, AxiosResponse } from "axios";
-import { WaCloudCredentials } from "./WaCloudCredentials";
+import { WaCredentials } from "./WaCredentials";
 import { AudioMessage, ButtonMessage, ContactMessage, DocumentMessage, ImageMessage, ListMessage, LocationMessage, MarkedAsRead, ReplyAudioMessage, ReplyDocumentMessage, ReplyImageMessage, ReplyReactionMessage, ReplyStickerMessage, ReplyTextMessage, ReplyVideoMessage, StickerMessage, TemplateMessage, TextMessage, VideoMessage } from "@/types/messages";
 import { OkStatusResponse } from "@/types/OkStatusResponse";
 import { OAuthException } from "../exceptions";
@@ -14,13 +14,13 @@ import { Button, ReplyButtonMessage } from "@/types/messages/ButtonMessage";
 /**
  * @class
  * This class is used send messages of all types such Text,video,image,buttons,list and many more including reply messages
- * @see {@link WaCloudCredentials} - How to create the credentials class
+ * @see {@link WaCredentials} - How to create the credentials class
  * @example
  *  To get started sending messages, you have to create the class with credentials
  * ```typescript
- *  import {WaCloudCredentials,WaCloudMessages} from "blaze380/wa-cloud";
+ *  import {WaCredentials,WaCloudMessages} from "blaze380/wa-cloud";
  *
- *  const waCredentials:WaCloudCredentials= new WaCloudCredentials(12345567890,"accessToken",1234555555,124478479823,"v20.0");
+ *  const waCredentials:WaCredentials= new WaCredentials(12345567890,"accessToken",1234555555,124478479823,"v20.0");
  *  const wa:WaCloudMessages = new WaCloudMessages(waCredentials);
  *  const sendMessage=async():Promise<void>=>{
  *      const response = await wa.sendTextMessage("Hello, World!","258851234567");
@@ -31,18 +31,18 @@ import { Button, ReplyButtonMessage } from "@/types/messages/ButtonMessage";
  *@category Messages Methods
  *
  */
-export class WaCloudMessages {
-    private readonly waCredentials: WaCloudCredentials;
+export class WaMessages {
+    private readonly waCredentials: WaCredentials;
     private readonly api: AxiosInstance;
     private readonly messagesEndpoint: string;
 
     /**
      *@hideconstructor
-     * @param waCloudCredentials
+     * @param WaCredentials
      */
-    constructor (waCloudCredentials: WaCloudCredentials) {
-        if (!waCloudCredentials) throw new Error("This Object is null");
-        this.waCredentials = waCloudCredentials;
+    constructor (WaCredentials: WaCredentials) {
+        if (!WaCredentials) throw new Error("This Object is null");
+        this.waCredentials = WaCredentials;
         this.messagesEndpoint = `${ this.waCredentials.baseUrl }/${ this.waCredentials.phoneNumberId }/messages`;
         this.api = axios.create({
             baseURL: this.messagesEndpoint,
@@ -65,7 +65,7 @@ export class WaCloudMessages {
     * @returns {OkStatusResponse} - Whatsapp Ok status response
     * @see {@link OkStatusResponse} - A whatsapp response type
     * @example
-    *  Let's supose that you're texting to someone that lives in mozambique,
+    *  Let's suppose that you're texting to someone that lives in mozambique,
     *  their code is 258 and phone number length is 9...
     * ```typescript
     * wa.sendTextMessage("Hello, World!","258851234567");
@@ -813,6 +813,7 @@ export class WaCloudMessages {
             to: to,
             type: MESSAGE_TYPE.template,
         }
+
         if (headerParameters) message.template.components[1] = { type: COMPONENT_TYPE.header, parameters: headerParameters };
         return await this.postData(message);
     }

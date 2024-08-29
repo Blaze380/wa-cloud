@@ -1,7 +1,9 @@
-import { WaCloudCredentials } from "./WaCloudCredentials";
-import { WaCloudMessages } from "./WaCloudMessages";
+import { WaCredentials } from "./WaCredentials";
+import { WaMessages } from "./WaMessages";
+import { WaMessageWebhooks } from "./WaMessageWebhooks";
+import { WaMedia } from "./WaMedia";
 /**
  * @ignore
  *
  */
-export { WaCloudCredentials, WaCloudMessages, };
+export { WaCredentials, WaMessages, WaMessageWebhooks, WaMedia };
