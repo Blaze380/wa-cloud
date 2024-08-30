@@ -1,9 +1,9 @@
 import { WaCredentials } from "./WaCredentials";
 import { WaMessages } from "./WaMessages";
-import { WaMessageWebhooks } from "./WaMessageWebhooks";
+import { WaWebhooks } from "./WaWebhooks";
 import { WaMedia } from "./WaMedia";
 /**
  * @ignore
  *
  */
-export { WaCredentials, WaMessages, WaMessageWebhooks, WaMedia };
+export { WaCredentials, WaMessages, WaWebhooks, WaMedia };

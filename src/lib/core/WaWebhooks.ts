@@ -2,7 +2,7 @@ import { MESSAGE_TYPE } from "../enums/customTypes";
 import { MessageContext } from "../types/webhook/context/MessageContext";
 import { ReceivedContactMessage, ReceivedImageMessage, ReceivedLocationMessage, ReceivedOrderMessage, ReceivedReactionMessage, ReceivedTextMessage, WebhookNotificationBase, ReceivedStickerMessage, ReceivedUnknownMessage, ReceivedProductEnquiryMessage } from "../types/webhook/index";
 
-export class WaMessageWebhooks {
+export class WaWebhooks {
 
     /**
      *

@@ -1,6 +1,6 @@
-import { WaMessages, WaCredentials } from "./lib/core";
+import { WaMessages, WaCredentials, WaMedia, WaWebhooks } from "./lib/core"
 /**
  * @ignore
  *
  */
-export { WaCredentials, WaMessages };
+export { WaCredentials, WaMessages, WaMedia, WaWebhooks };

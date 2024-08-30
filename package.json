@@ -1,28 +1,38 @@
 {
-  "name": "blaze380/wa-cloud",
-  "version": "1.0.0",
-  "main": "src/index.js",
+  "name": "wa-cloud",
+  "version": "1.0.2-pre-alpha.1",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon",
     "dev:build": "npx tsc ./src/lib/wa-cloud-api.ts",
     "docs": "npx typedoc",
-    "build": "",
+    "build": "tsc",
     "test": "jest"
   },
   "keywords": [
     "whatsapp",
     "cloud-api",
     "whatsapp bot",
-    "oficial whatsapp api"
+    "official whatsapp api",
+    "cloud api wrapper",
+    "chatbot",
+    "wa-cloud",
+    "whatsapp cloud api",
+    "whatsapp lib"
   ],
   "author": "Niuro Orlando",
-  "license": "ISC",
+  "license": "GPL-3.0-only",
   "description": "A simple library to simplify the development using whatsapp cloud API. It provides a ready methods to interact to your business account. ",
   "dependencies": {
     "axios": "^1.7.4",
     "express": "^4.19.2",
     "form-data": "^4.0.0",
     "mime-types": "^2.1.35"
+  },
+  "homepage": "https://blaze380.github.io/wa-cloud",
+  "repository": {
+    "url": "git+https://github.com/Blaze380/wa-cloud.git",
+    "directory": "src/lib"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
@@ -34,5 +44,10 @@
     "ts-node": "^10.9.2",
     "typedoc": "^0.26.6",
     "typescript": "^5.5.4"
-  }
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "package.json"
+  ]
 }
