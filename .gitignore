@@ -1,4 +1,6 @@
+deprecated
 node_modules
 .env.*
-src/lib/wa-cloud-api.ts
+.env*
 dist
+lib
